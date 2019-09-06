@@ -1,4 +1,5 @@
-*{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}body{background: #fff;font-family: "Open Sans", Sans-serif;font-size: 16px;}
+*{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}body{background: #f0ebe0;font-family: "Open Sans", Sans-serif;font-size: 16px;}
+
 /*-------CONTENEDOR ---------*/
 .contenedor{width: 100%;max-width: 1260px;margin: auto;overflow: hidden;}
 /*-------- HEADER  REDES SOCIALES----------*/
@@ -47,22 +48,25 @@ header .menu a{
     float:left;
 }
 /*Carrucel 1*/
-#main .carousel-inner img {max-height: 73vh;filter: grayscale(20%);object-fit: cover;}#carousel {position: relative;}
+#main .carousel-inner img {max-height: 74vh;filter: grayscale(10%);object-fit: cover;}#carousel {position: relative;}
 #carousel .overlay {
 position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: #f0ebe0;
   }
   
   #carousel .overlay .container,
   #carousel .overlay .row {
     height: 100%;
   }
-
+#main button{
+    border: 1px solid  #71392c;
+    color: #1e1e1e;
+    height: 30px;
+}
   #main a button{
       text-decoration: none;
       font-weight: bold;
@@ -71,32 +75,54 @@ position: absolute;
   }
   #main a:hover button{
     background: #fff;
+    border: 1px solid  #fff;
     color: #71392c;
 }
 .carousel-indicator{
     position:absolute;
     right:0;
-    top:60%;
+    top:50%;
     z-index:15;
-   /*display: inline-flex;*/
     justify-content:center;
-    left:0;
-    margin-right:15%;
-    margin-left:15%;
+    left:25%;
     }
+
+#main h1{
+    font-size:65px;
+    font-weight: bold;
+}
+#main h6{
+    color:#55180b;
+    font-weight: bold;
+}
 /*---------------Musica-------------*/
 
-#musica .carousel-inner img {
-    max-height: 75vh;
+#musica img {
+    max-height: 73vh;
     object-fit: cover;
-    border: black solid 1px;
   }
+ #musica  h1{font-weight: bold;color:#71392c; padding-bottom: 10px}#musica h6{color:black;font-weight: bold;}
+#musica .carousel-caption{position:absolute;top:40%;left:50%;color:#fff;text-align:left;}
 
+#musica .carousel-inner{position:relative;width:100%;overflow:hidden;/*left: 6%;*/}
+#musica .carousel{position:relative;width: 100%;top:-210px;}
+#musica button{
+    border: 1px solid  #71392c;
+    color: #1e1e1e;
+    text-align: center;
+    height: 50px;
+}
+#musica a button{
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    background: #71392c;
+}
 /*-----------------Videos--------------*/
 .videos{
     background-color: #a89c7a;
     position: relative;
-    top: 130px;
+    top: -10px;
     left: 0px;
     right: 0px;
     height: 150px;
@@ -118,17 +144,17 @@ position: absolute;
 }
 
 .diagonal{
-    background-color: #fff;
+    background-color: #f0ebe0;
     position: relative;
-    top: -100px;
+    top: -70px;
     left: 0px;
     right: 0px;
-    height: 200px;
+    height: 183px;
     color: #71392c;
     font-family:"Open Sans", Sans-serif;
-    -ms-transform: skewY(-8deg);
-    -webkit-transform: skewY(-8deg);
-    transform: skewY(-8deg);
+    -ms-transform: skewY(-7deg);
+    -webkit-transform: skewY(-7deg);
+    transform: skewY(-7deg);
 } 
 
 /*-----------FOOTER -----------*/
